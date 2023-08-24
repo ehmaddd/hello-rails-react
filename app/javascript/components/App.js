@@ -1,19 +1,13 @@
-import React from "react";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from 'react-redux';
-import { getGreeting } from "../features/greeting/greetingSlice";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Greeting from './Greeting';
 
-const App = () => {
-    const dispatch = useDispatch();
-    const greeting = useSelector((state) => state.greeting.greeting.greeting);
-
-    useEffect(() => {
-        dispatch(getGreeting());
-      }, []);
-
-    return (
-        <h1>{greeting}</h1>
-    )
+function App() {
+  return (
+    <BrowserRouter>
+      <Greeting />
+    </BrowserRouter>
+  );
 }
 
 export default App;
