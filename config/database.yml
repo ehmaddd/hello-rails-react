@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: greetingdb
+  pool: 5
+  username: postgres
+  password: new
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: greetingdb
+  pool: 5
+  username: postgres
+  password: new
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: greetingdb
+  pool: 5
+  username: postgres
+  password: new
+  host: localhost
